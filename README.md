@@ -18,7 +18,7 @@ Requirements
 ============
 Python 3 installed with the following Python packages also installed:
 1. pip &emsp;&emsp;&emsp;&emsp;&emsp;Python3 -m pip install
-2. requests &emsp;&emsp;&ensp;via pip
+2. requests &emsp;&emsp;&nbsp;via pip
 3. Flask&emsp; &emsp;&emsp;&emsp;via pip
 4. Werkzeug &emsp;&ensp;(this may be included in the Flask installation)
 
