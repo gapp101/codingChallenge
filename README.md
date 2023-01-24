@@ -68,7 +68,7 @@ Note: every execution of powerClient will overwrite the contents of pcResponse.j
 
 powerClient will timeout after 20 seconds if no response is received from powerServer.
 
-If the IP address 127.0.0.1 does not work, then try the 2nd IP address written to the powerServer console at startup.
+If the IP address 127.0.0.1 does not work, then try the 2nd IP address written to the log file at startup (see below).
 
 
 Logging
