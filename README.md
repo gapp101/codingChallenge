@@ -39,7 +39,7 @@ To run the power-server, enter the following command at the shell prompt:
 
 >  flask --app powerServer run  -h 0.0.0.0  -p 8888
 
-This runs the powerServer on “all” IP addresses. Seems dodgy to me, but it certainly has the server accept requests on 2 IP addresses: 127.0.0.1 and another local IP that is determined by your network. 
+This runs the powerServer on “all” IP addresses. Seems dodgy to me, but it certainly has the server accept requests on 2 IP addresses: 127.0.0.1 and another local IP that is determined by your network. The second IP can be seen in the first few lines in the log file entries for a particular execution. Not particularly "friendly".
 
 For all IP addresses, the server listens on port 8888.
 
@@ -73,7 +73,9 @@ If the IP address 127.0.0.1 does not work, then try the 2nd IP address written t
 
 Logging
 =======
-At start-up, powerServer opens the file (creates if it does not exist) “powerServer.log”. All API requests are logged here including failed requests.
+At start-up, powerServer opens the file (creates if it does not exist) “powerServer.log”. All API requests are logged here including failed requests. Amoungst the first few log entries of each execution is a listing of the 2 IP addresses the server is using. One being: 127.0.0.1 and the other an IP address determined by your network. One of these IPs is necessary to make REST request when calling the API.
 
 If a problem occurs when the powerServer is processing an API request, then in addition to making a log entry, the server returns a JSON string (Python dictionary) containing the error attributes. 
+
+
 
