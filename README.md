@@ -17,10 +17,10 @@ Assumptions
 Requirements
 ============
 Python 3 installed with the following Python packages also installed:
-1. pip &emsp; &emsp; &emsp;Python3 -m pip install
+1. pip &emsp; &emsp; &emsp; &emsp; Python3 -m pip install
 2. requests &emsp; &emsp;via pip
 3. Flask &emsp; &emsp; &emsp; via pip
-4. Werkzeug &emsp; &emsp; (this may be included in the Flask installation)
+4. Werkzeug &emsp; (this may be included in the Flask installation)
 
 Note: the file “requirements.txt” was generated from my computing environment (Macintosh, terminal) using the command
 
